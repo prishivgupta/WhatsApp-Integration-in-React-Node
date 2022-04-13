@@ -1,0 +1,23 @@
+2022/04/13-20:55:19.387 11303 Creating DB /Users/prishivgupta/Desktop/WhatsApp-Integration-in-React-Node/tmp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
+2022/04/13-20:55:19.440 11303 Reusing MANIFEST /Users/prishivgupta/Desktop/WhatsApp-Integration-in-React-Node/tmp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/13-20:55:55.197 29a03 Level-0 table #5: started
+2022/04/13-20:55:55.286 29a03 Level-0 table #5: 1254941 bytes OK
+2022/04/13-20:55:55.323 29a03 Delete type=0 #3
+2022/04/13-20:55:59.612 16a47 Level-0 table #7: started
+2022/04/13-20:55:59.790 16a47 Level-0 table #7: 1027889 bytes OK
+2022/04/13-20:55:59.844 16a47 Delete type=0 #4
+2022/04/13-20:56:00.067 c903 Compacting 1@1 + 1@2 files
+2022/04/13-20:56:00.258 c903 Generated table #8@1: 18760 keys, 1260643 bytes
+2022/04/13-20:56:00.258 c903 Compacted 1@1 + 1@2 files => 1260643 bytes
+2022/04/13-20:56:00.310 c903 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/04/13-20:56:04.442 16a47 Level-0 table #10: started
+2022/04/13-20:56:04.497 16a47 Level-0 table #10: 1211594 bytes OK
+2022/04/13-20:56:04.556 16a47 Delete type=0 #6
+2022/04/13-20:56:04.556 16a47 Delete type=2 #7
+2022/04/13-20:56:04.556 16a47 Delete type=2 #5
+2022/04/13-20:56:04.637 c903 Compacting 1@1 + 1@2 files
+2022/04/13-20:56:04.964 c903 Generated table #11@1: 27221 keys, 1742428 bytes
+2022/04/13-20:56:04.980 c903 Compacted 1@1 + 1@2 files => 1742428 bytes
+2022/04/13-20:56:05.032 c903 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/04/13-20:56:05.032 c903 Delete type=2 #10
+2022/04/13-20:56:05.032 c903 Delete type=2 #8

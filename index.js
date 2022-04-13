@@ -12,16 +12,15 @@ app.post("/api", (req, res) => {
   const { phone, msg } = req.body;
 
   wbm
-    .start({ qrCodeData: true, session: false, showBrowser: false })
+    .start({ qrCodeData: true, session: false, showBrowser: true })
     .then(async (qrCodeData) => {
       console.log(qrCodeData); // show data used to generate QR Code
       res.send(qrCodeData);
       await wbm.waitQRCode();
 
-      const phones = [phone];
       const message = msg;
 
-      await wbm.send(phones, message);
+      await wbm.send(phone, message);
       await wbm.end();
     })
     .catch((err) => {
@@ -30,18 +29,18 @@ app.post("/api", (req, res) => {
 });
 
 // Loading frontend
-app.use(express.static(path.join(__dirname, "./client/build")));
+// app.use(express.static(path.join(__dirname, "./client/build")));
 
-app.get("*", function (_, res) {
-  res.sendFile(
-    path.join(__dirname, "./client/build/index.html"),
-    function (err) {
-      if (err) {
-        res.status(500).send(err);
-      }
-    }
-  );
-});
+// app.get("*", function (_, res) {
+//   res.sendFile(
+//     path.join(__dirname, "./client/build/index.html"),
+//     function (err) {
+//       if (err) {
+//         res.status(500).send(err);
+//       }
+//     }
+//   );
+// });
 
 const PORT = process.env.PORT || 5000;
 
